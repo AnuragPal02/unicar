@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 24px;
+  color: #444242;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #444242;
+  margin-bottom: 15px;
+}
+
+.form-group,
+.address-group {
+  margin-bottom: 10px;
+}
+
+.form-group label,
+.address-group label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 3px;
+  color: #444242;
+  font-weight: bold;
+}
+
+.form-group input,
+.address-group input {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: black;
+}
+
+.form-group input:focus,
+.address-group input:focus {
+  outline: none;
+}
+
+.field-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.field-row .form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.btn-fixed {
+  width: 120px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .user-profile {
+    height: auto;
+    padding-bottom: 6rem !important;
+  }
+
+  .profile-form {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .form-group,
+  .address-group {
+    margin-bottom: 8px;
+  }
+
+  .field-row {
+    flex-direction: column;
+  }
+
+  .field-row .form-group {
+    min-width: auto;
+  }
+}

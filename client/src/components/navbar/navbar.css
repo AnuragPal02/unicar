@@ -1,0 +1,203 @@
+.navbar {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: black;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  background-color: #f3e5f5;
+}
+
+.uniquecarving {
+  width: 230px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.uniquecarving img {
+  width: inherit;
+  height: inherit;
+}
+
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 300px;
+  height: 50px;
+  position: relative;
+}
+
+.left img {
+  max-width: 200px;
+  position: absolute;
+  left: 0;
+  max-height: 145px;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.left span {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  left: 7rem;
+  color: orchid;
+  text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.6);
+}
+
+.left span:hover {
+  cursor: pointer;
+}
+
+.left img:hover {
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+
+.marquee {
+  display: block;
+  width: 100%;
+  color: black;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.3rem;
+}
+
+.marquee span {
+  display: block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background: white !important;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  max-height: 90%;
+  overflow-y: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 12px !important;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left {
+    margin-bottom: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    text-align: center;
+    padding: 0;
+  }
+
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown-menu ul li {
+    margin: 15px 0;
+  }
+
+  .dropdown-menu ul li .link {
+    font-size: 1rem;
+    color: black;
+    font-family: cursive;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .dropdown-menu ul li .link:hover {
+    border-bottom: 1px solid black;
+    color: purple;
+    transition: 0.4s ease;
+  }
+}

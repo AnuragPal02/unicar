@@ -1,0 +1,140 @@
+.contacts {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(238, 238, 22, 0.186);
+}
+
+.cont_lefts {
+    background-color: rgba(255, 255, 255, 0.617);
+    height: auto;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.content-section span{
+    margin: 0 !important;
+}
+span {
+    font-family: cursive;
+}
+
+.conatact_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.conatact_information h2 {
+    font-family: cursive;
+    border-bottom: 3px solid red;
+    color: black;
+}
+
+.information {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact_name,
+.conatact_no,
+.conatact_email,
+.conatact_address {
+    margin-bottom: 10px;
+}
+
+.followus {
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.followus div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.followus i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.insta {
+    color: red;
+}
+
+.insta:hover,
+.whatsapp:hover,
+.twitter:hover {
+    cursor: pointer;
+}
+
+.whatsapp {
+    color: green;
+}
+
+.twitter {
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont_lefts {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .conatact_information {
+        margin-top: 0;
+    }
+
+    .conatact_information h2 {
+        font-size: 1.5rem;
+    }
+
+    .information {
+        font-size: 14px;
+    }
+
+    .followus {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .followus i {
+        font-size: 24px;
+    }
+
+    .followus span {
+        font-size: 14px;
+    }
+
+    .followus div {
+        justify-content: center;
+        width: 100%;
+    }
+}

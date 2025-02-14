@@ -1,0 +1,30 @@
+.pencil-art {
+    font-family: 'Montserrat', sans-serif !important;
+    width: 100%;
+    display: flex;
+    padding-left: 1rem;
+    border-radius: 10px;
+    background-color: #f3e5f5;
+  }
+
+  
+  .pencil-art:hover {
+    background-color: lavender; 
+    cursor: pointer;
+  }
+
+  .active{
+    background-color: rgb(190, 190, 224); 
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
