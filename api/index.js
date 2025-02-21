@@ -41,6 +41,9 @@ app.use('/api/profile', Authorization, profileRoute);
 app.use('/api/email', emailRoute);
 app.use('/api/payment-gateway', paymentRoute);
 
+app.get("/", (req, res) => {
+    res.send("Server is running");
+});
 
 app.get('/keep-alive', (req, res) => {
     res.send('Server is alive!');

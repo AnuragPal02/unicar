@@ -6,7 +6,8 @@ const axios = require('axios');
 
 const keepServerAlive = async () => {
   try {
-    const response = await axios.get('https://unqiue-carving.onrender.com/keep-alive');
+   // const response = await axios.get('https://unqiue-carving.onrender.com/keep-alive');
+    const response = await axios.get('http://localhost:5000');
     console.log('Keep-alive request successful:', response.data);
   } catch (error) {
     console.error('Error making keep-alive request:', error);
