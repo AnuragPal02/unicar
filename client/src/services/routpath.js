@@ -3,7 +3,7 @@ export const register = "https://unqiue-carving.onrender.com/api/auth/register";
 export const generateOtp = "https://unqiue-carving.onrender.com/api/email/generate-otp";
 export const verifyOtp = "https://unqiue-carving.onrender.com/api/email/verify-otp";
 export const resetPassword = "https://unqiue-carving.onrender.com/api/auth/reset-password";
-export const getPencilCarveProducts = "https://unqiue-carving.onrender.com/api/product/get-products?productType=pencilcarving";
+export const getPencilCarveProducts = "https://unicarve.onrender.com/api/product/get-products?productType=pencilcarving";
 export const productAddTocart = "https://unqiue-carving.onrender.com/api/cart/add-to-cart";
 export const getScrunchies = "https://unqiue-carving.onrender.com/api/product/get-products?productType=scrunchies";
 export const getCartProducts = "https://unqiue-carving.onrender.com/api/cart/get-cart/";
